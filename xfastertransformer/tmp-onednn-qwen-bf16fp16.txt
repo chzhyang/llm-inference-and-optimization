@@ -1,0 +1,143 @@
+[INFO] SINGLE_INSTANCE MODE.
+master: rank-0
+onednn_verbose,info,oneDNN v3.2.0 (commit 04b180b9a58a78cf1a1cd2329671a5060c2be8de)
+onednn_verbose,info,cpu,runtime:OpenMP,nthr:60
+onednn_verbose,info,cpu,isa:Intel AVX-512 with float16, Intel DL Boost and bfloat16 support and Intel AMX with bfloat16 and 8-bit integer support
+onednn_verbose,info,gpu,runtime:none
+onednn_verbose,info,prim_template:operation,engine,primitive,implementation,prop_kind,memory_descriptors,attributes,auxiliary,problem_desc,exec_time
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,2.59399
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,1.302
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.98584
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.855957
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.452881
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.206055
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.788818
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.456055
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.449219
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.204834
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.791992
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.466797
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.447021
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.202881
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.787109
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.454102
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.446045
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.212891
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.791992
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.456055
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.446045
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.207031
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.787842
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.480957
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.448975
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.204102
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.782959
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.454834
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.445801
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.207031
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.796875
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.455078
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.445068
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.206055
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.790039
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.457031
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.470947
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.204102
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.786865
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.452148
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.445068
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.206055
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.789062
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.453857
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.442871
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.206055
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.781982
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.453125
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.447998
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.203125
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.783936
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.456055
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.441895
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.208008
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.782959
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.451904
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.442871
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.203857
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.786133
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.454102
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.441162
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.208008
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.78418
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.451904
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.441895
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.204834
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.78418
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.465088
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.447998
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.203125
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.785156
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.452881
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.444092
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.203857
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.817139
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.453125
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.439941
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.204102
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.782959
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.451904
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.448975
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.206055
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.781982
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.455078
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.439941
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.206055
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.790771
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.454102
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.439941
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.205078
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.780029
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.452881
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.438965
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.205078
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.782959
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.452881
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.442139
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.204102
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.786133
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.456055
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.437988
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.202148
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.778076
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.451904
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.437012
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.203857
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.779053
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.453857
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.444092
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.202881
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.779053
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.459961
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.437988
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.206055
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.779053
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.453857
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.441162
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.205078
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.778076
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.449951
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.437012
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.204102
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.7771
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.463867
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,,,16x4096:4096x12288,0.440918
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x4096:4096x4096,0.203857
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,,,16x4096:4096x22016,0.7771
+onednn_verbose,exec,cpu,matmul,brg:avx512_core_amx,undef,src_bf16::blocked:ab::f0 wei_bf16::blocked:BA16a64b2a::f0 dst_f32::blocked:ab::f0,attr-post-ops:binary_add:f32:3:ab ,,16x11008:11008x4096,0.447998
+Once upon a time, there existed a little girl who liked to have adventures. She would often wander off into the woods, exploring and discovering new things. One day, she stumbled upon a hidden cave. It was dark and mysterious, and she could hear strange noises coming from inside. The little girl was curious and decided to explore the cave.
+
+As she made her way deeper into the cave, she noticed that the walls were covered in strange symbols and markings. She couldn't make out what they meant, but she knew that they were important. Suddenly, she heard a loud rum
+Execution time:	6.87 s
+Latency:	68.69 ms/token
+Througput:	14.56 tokens/s
+Result:
+{'total_token_latency_s': 6.866686704568565, 'first_token_latency_ms': 96.83332312852144, 'next_token_latency_ms': 68.38235738828327, 'avg_token_latency_ms': 68.66686704568565}

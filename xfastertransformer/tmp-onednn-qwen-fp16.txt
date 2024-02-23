@@ -1,0 +1,10 @@
+[INFO] SINGLE_INSTANCE MODE.
+master: rank-0
+Once upon a time, there existed a little girl who liked to have adventures. She would often wander off into the woods, exploring and discovering new things. One day, she stumbled upon a hidden cave. It was dark and mysterious, and she could hear strange noises coming from inside. The little girl was curious and decided to explore the cave.
+
+As she made her way deeper into the cave, she noticed that the walls were covered in strange symbols and markings. She couldn't make out what they meant, but she knew that they were important. Suddenly, she heard a loud rum
+Execution time:	6.87 s
+Latency:	68.66 ms/token
+Througput:	14.56 tokens/s
+Result:
+{'total_token_latency_s': 6.864069694653153, 'first_token_latency_ms': 116.70723557472229, 'next_token_latency_ms': 68.1551763543276, 'avg_token_latency_ms': 68.64069694653153}

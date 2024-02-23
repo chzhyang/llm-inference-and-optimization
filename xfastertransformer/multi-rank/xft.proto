@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+service XFTService {
+  rpc predict (GenerateRequest) returns (GenerateResponse) {}
+
+  rpc predict_stream (GenerateRequest) returns (stream GenerateResponse) {}
+
+  rpc stop_service (StopServiceRequest) returns (StopServiceResponse) {}
+}
+
+message GenerateRequest {
+  repeated int32 Ids = 1;
+  int32 batch_size = 2;
+  int32 seq_len = 3;
+  int32 output_len = 4;
+  int32 num_beams = 5;
+  bool do_sample = 6;
+  int32 temperature = 7;
+  int32 top_p = 8;
+  int32 top_k = 9;
+  int32 rep_penalty = 10;
+}
+
+message GenerateResponse {
+  repeated int32 Ids = 1;
+  int32 batch_size = 2;
+  int32 seq_len = 3;
+}
+
+message StopServiceRequest {
+    bool stop_service = 1;
+}
+
+message StopServiceResponse {
+    string message = 1;
+}

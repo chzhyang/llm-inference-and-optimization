@@ -1,0 +1,13 @@
+Output from generate: 2024:01:17-15:08:43:( 5151) |CCL_WARN| MPI was initialized externally, CCL-MPI specific environment is ignored
+2024:01:17-15:08:43:( 5150) |CCL_WARN| MPI was initialized externally, CCL-MPI specific environment is ignored
+rank-0, model-rank-0, name:54049b9e14a1, size2
+Once upon a time, there existed a little girl who liked to have worker: rank-1, model-rank-1, name:54049b9e14a1, size2
+adventures. She was a very curious little girl. She liked to explore the world around her. She liked to go on adventures. She liked to go on adventures with her friends. She liked to go on adventures with her family. She liked to go on adventures with her pets. She liked to go on adventures with her toys. She liked to go on adventures with her imagination. She liked to go on adventures with her dreams. She liked to go on advent
+====================Performance====================
+Execution time:	3.92 s
+Latency:	39.22 ms/token
+Througput:	25.50 tokens/s
+rank-0, model-rank-0 result:
+	{'total_token_latency_s': 3.7862540101632476, 'first_token_latency_ms': 127.91809532791376, 'next_token_latency_ms': 36.952888028639734, 'avg_token_latency_ms': 37.862540101632476}
+2024:01:17-15:09:09:( 5150) |CCL_WARN| MPI_Finalize has been called before CCL finalization
+

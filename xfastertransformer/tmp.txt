@@ -1,0 +1,43 @@
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "/app/xfastertransformer/generate.py", line 230, in <module>
+    generate(args, DEFAULT_PROMPT)
+  File "/app/xfastertransformer/generate.py", line 159, in generate
+    tokenizer = AutoTokenizer.from_pretrained(args.token_path, use_fast=False, padding_side="left", trust_remote_code=True)
+  File "/opt/miniconda3/envs/xft/lib/python3.9/site-packages/transformers/models/auto/tokenization_auto.py", line 643, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "/opt/miniconda3/envs/xft/lib/python3.9/site-packages/transformers/models/auto/tokenization_auto.py", line 487, in get_tokenizer_config
+    resolved_config_file = cached_file(
+  File "/opt/miniconda3/envs/xft/lib/python3.9/site-packages/transformers/utils/hub.py", line 417, in cached_file
+    resolved_file = hf_hub_download(
+  File "/opt/miniconda3/envs/xft/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 110, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/opt/miniconda3/envs/xft/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 158, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '=/models/llama2-7b-xft'. Use `repo_type` argument if needed.
+Traceback (most recent call last):
+  File "/app/xfastertransformer/generate.py", line 230, in <module>
+    generate(args, DEFAULT_PROMPT)
+  File "/app/xfastertransformer/generate.py", line 159, in generate
+    tokenizer = AutoTokenizer.from_pretrained(args.token_path, use_fast=False, padding_side="left", trust_remote_code=True)
+  File "/opt/miniconda3/envs/xft/lib/python3.9/site-packages/transformers/models/auto/tokenization_auto.py", line 643, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "/opt/miniconda3/envs/xft/lib/python3.9/site-packages/transformers/models/auto/tokenization_auto.py", line 487, in get_tokenizer_config
+    resolved_config_file = cached_file(
+  File "/opt/miniconda3/envs/xft/lib/python3.9/site-packages/transformers/utils/hub.py", line 417, in cached_file
+    resolved_file = hf_hub_download(
+  File "/opt/miniconda3/envs/xft/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 110, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/opt/miniconda3/envs/xft/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 158, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '=/models/llama2-7b-xft'. Use `repo_type` argument if needed.
+Traceback (most recent call last):
+  File "/app/xfastertransformer/mpirun.py", line 17, in <module>
+    print("Result from generate:", comm.recv(source=1))
+  File "mpi4py/MPI/Comm.pyx", line 1438, in mpi4py.MPI.Comm.recv
+  File "mpi4py/MPI/msgpickle.pxi", line 341, in mpi4py.MPI.PyMPI_recv
+  File "mpi4py/MPI/msgpickle.pxi", line 299, in mpi4py.MPI.PyMPI_recv_match
+mpi4py.MPI.Exception: Invalid rank, error stack:
+internal_Mprobe(15455): MPI_Mprobe(1, MPI_ANY_TAG, MPI_COMM_WORLD, message=0x7ffc5542d830, status=0x7ffc5542d840) failed
+internal_Mprobe(15420): Invalid rank has value 1 but must be nonnegative and less than 1
