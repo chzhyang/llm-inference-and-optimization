@@ -1,0 +1,9 @@
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+[ INFO ]  --- load tokenizer --- 
+[ INFO ]  --- use local model --- 
+[ INFO ] inference_precision: <Type: 'bfloat16'>, inference_num_threads: 0
+[ INFO ]  --- start generating --- 
+[ INFO ]  --- text decoding --- 
+[ INFO ] Generation took 15.851 s on CPU
+latency len:  128
+[ INFO ] {'completion': 'How does it work?\nWhat is AI? How does it work? AI is a branch of computer science that aims to create intelligent machines that can perform tasks that typically require human intelligence. AI is a broad field that encompasses many different subfields, including machine learning, natural language processing, and computer vision.\nAI is a branch of computer science that aims to create intelligent machines that can perform tasks that typically require human intelligence. AI is a broad field that encompasses many different subfields, including machine learning, natural language processing, and computer vision.\nAI is a', 'prompt_tokens': 6, 'total_dur_s': 15.850636263843626, 'completion_tokens': 128, 'total_token_latency_s': 15.8272705078125, 'first_token_latency_ms': 932.2373867034912, 'next_token_latency_ms': 117.28372536306306, 'avg_token_latency_ms': 123.65055084228516}

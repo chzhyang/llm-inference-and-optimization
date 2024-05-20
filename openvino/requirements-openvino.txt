@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+sse-starlette
+# -f https://download.pytorch.org/whl/torch_stable.html
+# --extra-index-url https://download.pytorch.org/whl/cpu
+# torch==2.1.0+cpu
+pydantic
+torch==2.1.0 --find-links=./torch-2.1.0+cpu-cp39-cp39-linux_x86_64.whl
+transformers==4.31.0
+accelerate
+bitsandbytes
+cpm_kernels
+sentencepiece
+protobuf
+openvino-dev==2023.2.0
+nncf==2.6.0
+einops

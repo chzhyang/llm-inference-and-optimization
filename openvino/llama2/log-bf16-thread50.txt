@@ -1,0 +1,56 @@
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+[ INFO ]  --- load tokenizer --- 
+[ INFO ] Available devices:
+[ INFO ] CPU :
+[ INFO ] 	SUPPORTED_PROPERTIES:
+[ INFO ] 		AVAILABLE_DEVICES: 
+[ INFO ] 		RANGE_FOR_ASYNC_INFER_REQUESTS: 1, 1, 1
+[ INFO ] 		RANGE_FOR_STREAMS: 1, 240
+[ INFO ] 		FULL_DEVICE_NAME: Intel(R) Xeon(R) Platinum 8490H
+[ INFO ] 		OPTIMIZATION_CAPABILITIES: BF16, WINOGRAD, FP32, FP16, INT8, BIN, EXPORT_IMPORT
+[ INFO ] 		NUM_STREAMS: 1
+[ INFO ] 		AFFINITY: Affinity.CORE
+[ INFO ] 		INFERENCE_NUM_THREADS: 0
+[ INFO ] 		PERF_COUNT: False
+[ INFO ] 		INFERENCE_PRECISION_HINT: <Type: 'bfloat16'>
+[ INFO ] 		PERFORMANCE_HINT: PerformanceMode.LATENCY
+[ INFO ] 		EXECUTION_MODE_HINT: ExecutionMode.PERFORMANCE
+[ INFO ] 		PERFORMANCE_HINT_NUM_REQUESTS: 0
+[ INFO ] 		ENABLE_CPU_PINNING: True
+[ INFO ] 		SCHEDULING_CORE_TYPE: SchedulingCoreType.ANY_CORE
+[ INFO ] 		ENABLE_HYPER_THREADING: True
+[ INFO ] 		DEVICE_ID: 
+[ INFO ] 		CPU_DENORMALS_OPTIMIZATION: False
+[ INFO ] 		CPU_SPARSE_WEIGHTS_DECOMPRESSION_RATE: 1.0
+[ INFO ] 
+[ INFO ] ov_config: {'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': './model_cache', 'INFERENCE_NUM_THREADS': '50'}
+[ INFO ]  --- use local model --- 
+[ INFO ] inference_precision: <Type: 'bfloat16'>, inference_num_threads: 0
+[ INFO ] Available devices:
+[ INFO ] CPU :
+[ INFO ] 	SUPPORTED_PROPERTIES:
+[ INFO ] 		AVAILABLE_DEVICES: 
+[ INFO ] 		RANGE_FOR_ASYNC_INFER_REQUESTS: 1, 1, 1
+[ INFO ] 		RANGE_FOR_STREAMS: 1, 240
+[ INFO ] 		FULL_DEVICE_NAME: Intel(R) Xeon(R) Platinum 8490H
+[ INFO ] 		OPTIMIZATION_CAPABILITIES: BF16, WINOGRAD, FP32, FP16, INT8, BIN, EXPORT_IMPORT
+[ INFO ] 		NUM_STREAMS: 1
+[ INFO ] 		AFFINITY: Affinity.CORE
+[ INFO ] 		INFERENCE_NUM_THREADS: 0
+[ INFO ] 		PERF_COUNT: False
+[ INFO ] 		INFERENCE_PRECISION_HINT: <Type: 'bfloat16'>
+[ INFO ] 		PERFORMANCE_HINT: PerformanceMode.LATENCY
+[ INFO ] 		EXECUTION_MODE_HINT: ExecutionMode.PERFORMANCE
+[ INFO ] 		PERFORMANCE_HINT_NUM_REQUESTS: 0
+[ INFO ] 		ENABLE_CPU_PINNING: True
+[ INFO ] 		SCHEDULING_CORE_TYPE: SchedulingCoreType.ANY_CORE
+[ INFO ] 		ENABLE_HYPER_THREADING: True
+[ INFO ] 		DEVICE_ID: 
+[ INFO ] 		CPU_DENORMALS_OPTIMIZATION: False
+[ INFO ] 		CPU_SPARSE_WEIGHTS_DECOMPRESSION_RATE: 1.0
+[ INFO ] 
+[ INFO ]  --- start generating --- 
+[ INFO ]  --- text decoding --- 
+[ INFO ] Generation took 15.602 s on CPU
+latency len:  128
+[ INFO ] {'completion': 'How does it work?\nWhat is AI? How does it work? AI is a branch of computer science that aims to create intelligent machines that can perform tasks that typically require human intelligence. AI is a broad field that encompasses many different subfields, including machine learning, natural language processing, and computer vision.\nAI is a branch of computer science that aims to create intelligent machines that can perform tasks that typically require human intelligence. AI is a broad field that encompasses many different subfields, including machine learning, natural language processing, and computer vision.\nAI is a', 'prompt_tokens': 6, 'total_dur_s': 15.601560407085344, 'completion_tokens': 128, 'total_token_latency_s': 15.575690984725952, 'first_token_latency_ms': 1304.274559020996, 'next_token_latency_ms': 112.37335768271619, 'avg_token_latency_ms': 121.6850858181715}
